@@ -1,7 +1,7 @@
 const React = require('react')
 const Default = require('./layouts/default')
 
-function Index ({ breads }) {
+function Index ({ breads, index }) {
    const breadDisplay = breads.map((bread, i) => {
         return(
             <li key={i}>
@@ -17,8 +17,21 @@ function Index ({ breads }) {
         <ul>
             {breadDisplay}
         </ul>
+        <div>
+            <a href='breads/new'>
+                <button>
+                    Add a new bread
+                </button>
+            </a>
+        </div>
+
       </Default>
     )
 }
 
 module.exports = Index
+
+// MVC
+// Model - data
+// View
+// Controller - handles incomming requests - gets model data and combines it with views
