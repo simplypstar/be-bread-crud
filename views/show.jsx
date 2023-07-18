@@ -11,7 +11,7 @@ function Show ({bread, index}) {
             and it
             {
                 // this is a one line if/else statsment- JS ternary operator
-                bread.hasGlutten ? <span> does </span> : <span> does not </span>
+                bread.hasGluten ? <span> does </span> : <span> does not </span>
             }
             have glutten
         </p>
